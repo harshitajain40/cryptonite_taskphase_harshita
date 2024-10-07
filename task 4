@@ -1,1 +1,15 @@
+#learning from documentaries 
+
+hacker@man~learning-from-documentation:~$ --giveflag
+ssh-entrypoint: --giveflag: command not found
+hacker@man~learning-from-documentation:~$ /challenge/challenge
+Incorrect usage! You must pass an argument to me (read the challenge 
+description for details).
+hacker@man~learning-from-documentation:~$ --giveflag /challenge/challenge
+ssh-entrypoint: --giveflag: command not found
+hacker@man~learning-from-documentation:~$ /challenge/challenge --giveflag
+Correct argument! Here is your flag:
+pwn.college{s9kOv6-8mEllFwJ6hk0PH9vHjuO.dRjM5QDL3EzN0czW}
+hacker@man~learning-from-documentation:~$ 
+
 

@@ -1,1 +1,9 @@
-
+#globbing matching
+hacker@globbing~matching-with-:/bin$ cd
+hacker@globbing~matching-with-:~$ /ch*
+ssh-entrypoint: /challenge: Is a directory
+hacker@globbing~matching-with-:~$ cd /ch*
+hacker@globbing~matching-with-:/challenge$ /challenge/run
+You ran me with the working directory of /challenge! Here is your flag:
+pwn.college{QyPi4IvkUIh6LxpgbnlrPga93XC.dFjM4QDL3EzN0czW}
+hacker@globbing~matching-with-:/challenge$ 

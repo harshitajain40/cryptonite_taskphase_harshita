@@ -50,3 +50,13 @@ cat: /usr/local/share/radare2/5.9.5/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/lib/llvm-10/include/polly/flag
 pwn.college{QbdJyYKy2QFTZkbQEtkCUyeEgRv.dJzM4QDL3EzN0czW}hacker@commands~finding-files:~$ 
 
+# hidden files 
+hacker@commands~hidden-files:~$ cd /
+hacker@commands~hidden-files:/$ ls -a
+.           .flag-1239895921237  challenge  home   lib64   mnt  proc  sbin  tmp
+..          bin                  dev        lib    libx32  nix  root  srv   usr
+.dockerenv  boot                 etc        lib32  media   opt  run   sys   var
+hacker@commands~hidden-files:/$ cat /.flag-1239895921237
+pwn.college{w1ENm5t_AR11Ou7bTve23pDfUOi.dBTN4QDL3EzN0czW}
+hacker@commands~hidden-files:/$ 
+

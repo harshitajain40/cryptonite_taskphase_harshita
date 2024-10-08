@@ -46,3 +46,17 @@ pwn.college{IQtLKpni-D8Y31accMADsmmaBM0.dVjM4QDL3EzN0czW}
 hacker@globbing~mixing-globs:/challenge/files$ 
 
 #exclusionary-globbing
+
+
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run files[!wn]
+Error: your argument is too long! It must be 8 characters or less.
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run file_[!pwn]*
+Error: your argument is too long! It must be 8 characters or less.
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run file_[^pwn]*
+Error: your argument is too long! It must be 8 characters or less.
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run_[!pwn]*
+ssh-entrypoint: /challenge/run_[!pwn]*: No such file or directory
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{0vOukSXIMnhaW9y2WkNaQpD7VKo.dZjM4QDL3EzN0czW}

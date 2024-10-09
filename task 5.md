@@ -29,6 +29,28 @@ hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[bash]
 You got it! Here is your flag!
 pwn.college{sXq7lZdwGzPDCPrMJRGWG1gwUll.dNjM4QDL3EzN0czW}
 
+# -piped-data-with-tee
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code 
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the 
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee pwn_output | /challenge/college
+Processing...
+WARNING: you are overwriting file pwn_output with tee's output...
+The input to 'college' does not contain the correct secret code! This code 
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the 
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ cat pwn_output
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "IT85Evrw"
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret IT85Evrw | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{IT85EvrwMRenHg_jADcdml3_Lug.dFjM5QDL3EzN0czW}
+
 
 hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[bash]
 You got it! Here is your flag!

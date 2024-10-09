@@ -69,14 +69,4 @@ You got it! Here is your flag!
 pwn.college{0vOukSXIMnhaW9y2WkNaQpD7VKo.dZjM4QDL3EzN0czW}
 
 
-# writing-to-multiple-programs
-hacker@piping~writing-to-multiple-programs:~$ /challenge/hack |tee >(/challenge/the) | /challenge/planet
-Congratulations, you have duplicated data into the input of two programs! Here 
-is your flag:
-pwn.college{8rKNoiBwXZqA407Ngy_kj8Q-k52.dBDO0UDL3EzN0czW}
 
-# split-piping-stderr-and-stdout
-hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack 2> >( /challenge/the ) | /challenge/planet
-Congratulations, you have learned a redirection technique that even experts 
-struggle with! Here is your flag:
-pwn.college{krfgR3nWlx5Z516YhLNvOnwBkzP.dFDNwYDL3EzN0czW}

@@ -1,4 +1,4 @@
-#learning from documentaries 
+# learning from documentaries 
 
 hacker@man~learning-from-documentation:~$ --giveflag
 ssh-entrypoint: --giveflag: command not found
@@ -13,7 +13,7 @@ pwn.college{s9kOv6-8mEllFwJ6hk0PH9vHjuO.dRjM5QDL3EzN0czW}
 hacker@man~learning-from-documentation:~$ 
 
 
-#learning complex usauage 
+# learning complex usauage 
 hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
 Correct argument! Here is the /flag file:
 pwn.college{Qncf86gLrxK7NnchTKy9mXoXlYT.dVjM5QDL3EzN0czW}
@@ -65,7 +65,7 @@ hacker@man~reading-manuals:~$
 
 
 
-#searching manual 
+# searching manual 
 
 
 
@@ -189,6 +189,9 @@ OVERVIEW
        man.  It is possible to set the "catch-all" variable $MANOPT to any string in command
        line format, with the exception that any spaces used as part of an option's  argument
        must  be  escaped (preceded by a backslash).  man will parse $MANOPT prior to parsing
+
+
+# searching-for-manuals
 hacker@man~searching-for-manuals:~$ man -k /challenge/challenge 
 cnlgxuozld (1)       - print the flag!
 hacker@man~searching-for-manuals:~$ /challenge/challenge --cnlgxuozld
@@ -238,7 +241,7 @@ hacker@man~searching-for-manuals:~$
 
 
 
-# man helpful program 
+# helpful program 
 hacker@man~helpful-programs:~$ /challenge/challenge -h
 usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
 
@@ -258,4 +261,23 @@ The secret value is: 46
 hacker@man~helpful-programs:~$ /challenge/challenge -g 46
 Correct usage! Your flag: pwn.college{0Kx4XEa_6Qb9bDYo-cvKWIqiS4H.ddjM4QDL3EzN0czW}
 hacker@man~helpful-programs:~$ 
+
+# help-for-builtins
+hacker@man~help-for-builtins:~$ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune		display a fortune
+      --version		display the version
+      --secret VALUE	prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "UaqvbsLx".
+ssh-entrypoint: challenge:: command not found
+hacker@man~help-for-builtins:~$ challenge --secret UaqvbsLx
+Correct! Here is your flag!
+pwn.college{UaqvbsLxVgC2qqwcTpMb0YnwuFf.dRTM5QDL3EzN0czW}
+
 

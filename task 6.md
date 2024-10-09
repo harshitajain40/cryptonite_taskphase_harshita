@@ -92,3 +92,74 @@ Correct! You have redirected the PWN file into my standard input, and I read
 the value 'COLLEGE' out of it!
 Here is your flag:
 pwn.college{ECi_9GWVhpMbvwQpn46oQ7cntNn.dBzN1QDL3EzN0czW}
+
+# grepping-stored-results
+hacker@piping~grepping-stored-results:~$ /challenge/run >  /tmp/data.txt
+[INFO] WELCOME! This challenge makes the following asks of you:
+[INFO] - the challenge will check that output is redirected to a specific file path : /tmp/data.txt
+[INFO] - the challenge will output a reward file if all the tests pass : /challenge/.data.txt
+
+[HYPE] ONWARDS TO GREATNESS!
+
+[INFO] This challenge will perform a bunch of checks.
+[INFO] If you pass these checks, you will receive the /challenge/.data.txt file.
+
+[TEST] You should have redirected my stdout to a file called /tmp/data.txt. Checking...
+
+[HINT] File descriptors are inherited from the parent, unless the FD_CLOEXEC is set by the parent on the file descriptor.
+[HINT] For security reasons, some programs, such as python, do this by default in certain cases. Be careful if you are
+[HINT] creating and trying to pass in FDs in python.
+
+[PASS] The file at the other end of my stdout looks okay!
+[PASS] Success! You have satisfied all execution requirements.
+hacker@piping~grepping-stored-results:~$ grep "flag" /tmp/data.txt
+[FLAG] Here is your flag:
+flagging
+flagstone
+flagstones
+flagellation
+flagellating
+flagrantly
+camouflages
+unflagging
+conflagrations
+flagrant
+flagella
+flagon
+flagpole
+flagpole's
+conflagration
+flagged
+flagpoles
+flag's
+flagship's
+flagellum's
+flagellated
+persiflage
+flagstaffs
+camouflage's
+flagon's
+camouflaged
+flagstaff's
+flagship
+flagellates
+flagellate
+flag
+flagellums
+flagons
+conflagration's
+flagstone's
+flagellum
+flagships
+flagstaff
+camouflage
+flagellation's
+persiflage's
+camouflaging
+flags
+hacker@piping~grepping-stored-results:~$ grep pwn.colleg /tmp/data.txte
+grep: /tmp/data.txte: No such file or directory
+hacker@piping~grepping-stored-results:~$ grep pwn.colleg /tmp/data.txt
+pwn.college{gHcwNJvOWSCBYAo0XAgY3Fw8g08.dhTM4QDL3EzN0czW}
+hacker@piping~grepping-stored-results:~$ 
+

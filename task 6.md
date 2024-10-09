@@ -4,7 +4,7 @@ Correct! You successfully redirected 'PWN' to the file 'COLLEGE'! Here is your
 flag:
 pwn.college{MkDDP_kwgIHNlNnKGYctguzXI2d.dRjN1QDL3EzN0czW}
 
-#redirecting more output 
+# redirecting more output 
 hacker@piping~redirecting-more-output:~$ /challenge/run > myflag
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge will check that output is redirected to a specific file path : myflag

@@ -1,4 +1,4 @@
-#the roots 
+# the roots 
 hacker@paths~the-root:~$ /pwn
 BOOM!!!
 Here is your flag:
@@ -7,7 +7,7 @@ pwn.college{g3jT7rqo6guc6OtN55YGo8xas5M.dhzN5QDL3EzN0czW}
 
 
 
-#program and absolute path 
+# program and absolute path 
 
 hacker@paths~program-and-absolute-paths:~$ /challenge/run
 Correct!!!
@@ -15,7 +15,7 @@ Correct!!!
 pwn.college{4FbaY7ViynmV7I-e8bFjOmJvxIw.dVDN1QDL3EzN0czW}
 
 
-#position-thy-self
+# position-thy-self
 
 
 hacker@paths~position-thy-self:~$ /challenge/run
@@ -31,7 +31,7 @@ pwn.college{kZM-kSK2sgO7IE3FQzzo9Bc44Iu.dZDN1QDL3EzN0czW}
 
 
 
-#position elsewhere
+# position elsewhere
 
 
 hacker@paths~position-elsewhere:~$ /challenge/run
@@ -64,7 +64,7 @@ pwn.college{gc3y5V6sQkV8j4zue95h-fWJGf5.dhDN1QDL3EzN0czW}
 
 
 
-#implicit relative path 
+# implicit relative path 
 
 
 hacker@paths~implicit-relative-paths-from-:~$ /challenge/run
@@ -95,7 +95,7 @@ Here is your flag:
 pwn.college{EDKqE7tldxLkHyGC1CAlbIsYS8x.dBTN1QDL3EzN0czW}
 
 
-#implicit relative path 
+# implicit relative path 
 
 
 
@@ -111,7 +111,7 @@ Here is your flag:
 pwn.college{UcY2tRsVfiJqmrO2Y5wcfuTMHWK.dFTN1QDL3EzN0czW}
 
 
-#home sweet home 
+# home sweet home 
 
 hacker@paths~home-sweet-home:~$ /challenge/run ~/s
 Writing the file to /home/hacker/s!

@@ -30,6 +30,11 @@ You got it! Here is your flag!
 pwn.college{sXq7lZdwGzPDCPrMJRGWG1gwUll.dNjM4QDL3EzN0czW}
 
 
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[bash]
+You got it! Here is your flag!
+pwn.college{QRUfFB6F7ifn7aggHVWTPgIUVQp.dRjM4QDL3EzN0czW}
+
+
 #mixing globs 
 hacker@globbing~mixing-globs:~$ cd /cha/*
 ssh-entrypoint: cd: /cha/*: No such file or directory

@@ -1,4 +1,4 @@
-#globbing matching
+# globbing matching
 hacker@globbing~matching-with-:/bin$ cd
 hacker@globbing~matching-with-:~$ /ch*
 ssh-entrypoint: /challenge: Is a directory
@@ -9,7 +9,7 @@ pwn.college{QyPi4IvkUIh6LxpgbnlrPga93XC.dFjM4QDL3EzN0czW}
 hacker@globbing~matching-with-:/challenge$ 
 
 
-#matching with ?
+# matching with ?
 
 
 hacker@globbing~matching-with-:~$ cd /?ha??enge
@@ -17,7 +17,7 @@ hacker@globbing~matching-with-:/challenge$ /challenge/run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{IykWsJiwyeh7JE4WOjgu6r4z3_M.dJjM4QDL3EzN0czW}
 
-#matching with []
+# matching with []
 hacker@globbing~matching-with-:~$ cd challenge/files
 ssh-entrypoint: cd: challenge/files: No such file or directory
 hacker@globbing~matching-with-:~$ cd  /challenge/files
@@ -35,7 +35,7 @@ You got it! Here is your flag!
 pwn.college{QRUfFB6F7ifn7aggHVWTPgIUVQp.dRjM4QDL3EzN0czW}
 
 
-#mixing globs 
+# mixing globs 
 hacker@globbing~mixing-globs:~$ cd /cha/*
 ssh-entrypoint: cd: /cha/*: No such file or directory
 hacker@globbing~mixing-globs:~$ /cha*
@@ -50,7 +50,7 @@ You got it! Here is your flag!
 pwn.college{IQtLKpni-D8Y31accMADsmmaBM0.dVjM4QDL3EzN0czW}
 hacker@globbing~mixing-globs:/challenge/files$ 
 
-#exclusionary-globbing
+# exclusionary-globbing
 
 
 hacker@globbing~exclusionary-globbing:~$ cd /challenge/files

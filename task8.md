@@ -71,5 +71,28 @@ root          93      91  0 15:31 pts/0    00:00:00 ps -f
 
 Yay, I found another version of me! Here is the flag:
 pwn.college{o4oblivxg8BGe6ern5QbbsxCGh0.dVDN4QDL3EzN0czW}
-hacker@processes~suspending-processes:~$ grep flaf
+hacker@processes~suspending-processes:~$ 
+
+
+# resuming-processes
+hacker@processes~resuming-processes:~$ /challenge/run
+Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
+the 'fg' command! Or just press Enter to quit me!
+^C
+hacker@processes~resuming-processes:~$ ^C
+hacker@processes~resuming-processes:~$ ^C
+hacker@processes~resuming-processes:~$ ^C
+hacker@processes~resuming-processes:~$ /challenge/run
+Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
+the 'fg' command! Or just press Enter to quit me!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~resuming-processes:~$ fg
+/challenge/run
+I'm back! Here's your flag:
+pwn.college{AWPM1pDoPP9MRSx__x4pxRkgVdf.dZDN4QDL3EzN0czW}
+Don't forget to press Enter to quit me!
+ 
+Goodbye!
+
 

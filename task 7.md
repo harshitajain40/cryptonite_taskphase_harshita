@@ -57,7 +57,11 @@ PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/s
 _=/run/workspace/bin/env
 hacker@variables~printing-exported-variables:~$ 
 \
-
+ # reading variables 
+hacker@variables~reading-files:~$  read PWN < /challenge/read_me
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{4qvB7AW6Jnp7CSQjntLZJLT4R92.dBjM4QDL3EzN0czW}
+hacker@variables~reading-files:~$ 
 
 
 

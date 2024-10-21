@@ -1,14 +1,18 @@
 # printing variables 
-
+```
 hacker@variables~printing-variables:~$ echo $FLAG
+```
 pwn.college{cFaqvB8aU1jEUoEoi6MPGjbn-NV.ddTN1QDL3EzN0czW}
 
 # VARIABLE SETTING VARIABLE 
+```
 hacker@variables~setting-variables:~$ PWN=COLLEGE
+```
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{UOHUqc2UUfX3ZSmh1H9fgMSz0dN.dlTN1QDL3EzN0czW}
 
 # MULTI WORD VARIABLE 
+```
 hacker@variables~multi-word-variables:~$ PWN=COLLEGE YEAH
 bash: YEAH: command not found
 
@@ -17,11 +21,11 @@ variable assignment! This caused the shell to treat 'YEAH' as a command. Quote
 your multi-word values!
 hacker@variables~multi-word-variables:~$ PWN='COLLEGE YEAH'
 You've set the PWN variable properly! As promised, here is the flag:
+```
 pwn.college{8TWFBOFQ-UMnkPoCulV-vMFOJM6.dBjN1QDL3EzN0czW}
-hacker@variables~multi-word-variables:~$ 
 
 # VARIABLE EXPORTING VARIABLE 
-
+```
 hacker@variables~exporting-variables:~$ export PWN=COLLEGE
 You've set the PWN variable to the proper value!
 hacker@variables~exporting-variables:~$ COLLEGE=PWN
@@ -29,7 +33,8 @@ You've set the PWN variable to the proper value!
 You've set the COLLEGE variable to the proper value!
 hacker@variables~exporting-variables:~$ /challenge/run
 CORRECT!
-You have exported PWN=COLLEGE and set, but not exported, COLLEGE=PWN. Great 
+You have exported PWN=COLLEGE and set, but not exported, COLLEGE=PWN. Great
+```
 job! Here is your flag:
 pwn.college{MeLP7RXg4Sqa8yP33HRcMTMTuZO.dJjN1QDL3EzN0czW}
 You've set the PWN variable to the proper value!
@@ -37,8 +42,7 @@ You've set the COLLEGE variable to the proper value!
 hacker@variables~exporting-variables:~$ 
 
 # variables~printing-exported-variable
-
-
+```
 hacker@variables~printing-exported-variables:~$ env
 SHELL=/run/dojo/bin/bash
 HOSTNAME=variables~printing-exported-variables
@@ -55,13 +59,16 @@ SHLVL=1
 LC_CTYPE=C.UTF-8
 PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 _=/run/workspace/bin/env
-hacker@variables~printing-exported-variables:~$ 
+hacker@variables~printing-exported-variables:~$
+```
 \
  # reading variables 
+ ```
 hacker@variables~reading-files:~$  read PWN < /challenge/read_me
+```
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{4qvB7AW6Jnp7CSQjntLZJLT4R92.dBjM4QDL3EzN0czW}
-hacker@variables~reading-files:~$ 
+
 
 
 

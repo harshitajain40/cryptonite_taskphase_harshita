@@ -1,63 +1,79 @@
 # cat-not-the-pet-but-the-command
+```
 hacker@commands~cat-not-the-pet-but-the-command:~$ cat ~/flag
-pwn.college{MPyw8CEfXPXMaV6BfiXF0wlSjRF.dFzN1QDL3EzN0czW}
-hacker@commands~cat-not-the-pet-but-the-command:~$ 
+```
+FLAG:pwn.college{MPyw8CEfXPXMaV6BfiXF0wlSjRF.dFzN1QDL3EzN0czW}
+
 
 # catting-absolute-paths
+```
 hacker@commands~catting-absolute-paths:~$ cat /flag
-pwn.college{weF8skjf48o0mL7b_Er57L4JkZu.dlTM5QDL3EzN0czW}
-hacker@commands~catting-absolute-paths:~$ 
+```
+FLAG : pwn.college{weF8skjf48o0mL7b_Er57L4JkZu.dlTM5QDL3EzN0czW}
+
 
 # more catting practice 
+```
 You cannot use the 'cd' command in this level, and must retrieve the flag by 
 absolute path. Plus, I hid the flag in a different directory! You can find it 
 in the file /usr/share/enchant-2/flag. Go cat it out **without** cding into 
 that directory!
 hacker@commands~more-catting-practice:~$ cat /usr/share/enchant-2/flag
+```
 pwn.college{EII3wqDVDgnihV3yM2-qqUUw3Lv.dBjM5QDL3EzN0czW}
-hacker@commands~more-catting-practice:~$ 
+
 
 # grepping-for-a-needle-in-a-haystack
+```
 hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
+```
 pwn.college{wvuw13MHcwqwS33MoQsUkDBNf0z.ddTM4QDL3EzN0czW}
-hacker@commands~grepping-for-a-needle-in-a-haystack:~$ 
+
 
 # commands~listing-files
+```
 hacker@commands~listing-files:~$ ls /challenge
 30948-renamed-run-19834  DESCRIPTION.md
 hacker@commands~listing-files:~$ /challenge/30948-renamed-run-19834
+```
 Yahaha, you found me! Here is your flag:
 pwn.college{Yx2igdrY45x6n8G-uhLyR8mCT3-.dhjM4QDL3EzN0czW}
-hacker@commands~listing-files:~$ 
 
 
 # touching-files
+```
 hacker@commands~touching-files:~$ cd /tp
 ssh-entrypoint: cd: /tp: No such file or directory
 hacker@commands~touching-files:~$ cd /tmp
 hacker@commands~touching-files:/tmp$ touch pwn
 hacker@commands~touching-files:/tmp$ touch college
 hacker@commands~touching-files:/tmp$ /challenge/run
+```
 Success! Here is your flag:
 pwn.college{oIaWsDI_JPbIEEF1MPABiNSa-Yd.dBzM4QDL3EzN0czW}
-hacker@commands~touching-files:/tmp$ 
+
 
 # removing files
+```
 hacker@commands~removing-files:~$ rm delete_me
 hacker@commands~removing-files:~$ /challenge/check
+```
 Excellent removal. Here is your reward:
 pwn.college{4evmFXbRIPx6-SsU41QLsFZRFw9.dZTOwUDL3EzN0czW}
-hacker@commands~removing-files:~$ 
+
 
 # hidden-files
+```
 hacker@commands~hidden-files:~$ cd /
 hacker@commands~hidden-files:/$ ls -a
 .  ..  .dockerenv  .flag-11513123009445  bin  boot  challenge  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  nix  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 hacker@commands~hidden-files:/$ cat /.flag-11513123009445
+```
 pwn.college{w1ENm5t_AR11Ou7bTve23pDfUOi.dBTN4QDL3EzN0czW}
-hacker@commands~hidden-files:/$ 
+
 
 # an-epic-filesystem-ques
+```
 hacker@commands~an-epic-filesystem-quest:~$ cd /
 hacker@commands~an-epic-filesystem-quest:/$ ls
 WHISPER  bin  boot  challenge  dev  etc  flag  home  lib  lib32  lib64  libx32  media  mnt  nix  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
@@ -119,11 +135,13 @@ hacker@commands~an-epic-filesystem-quest:~$ cd /opt/linux/linux-5.4/include/conf
 hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/include/config/split$ ls
 ALERT  ptlock
 hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/include/config/split$ cat ALERT
+```
 CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
 It is: pwn.college{IF56lxYOV2V4au4aeq7q4dyZTm5.dljM4QDL3EzN0czW}
-hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/include/config/split$ 
+
 
 # making-directories
+```
 hacker@commands~making-directories:~$ cd /tmp
 hacker@commands~making-directories:/tmp$ mkdir pwn
 hacker@commands~making-directories:/tmp$ ls
@@ -139,15 +157,15 @@ ssh-entrypoint: /tmp/pwn/college: Permission denied
 hacker@commands~making-directories:/tmp/pwn$ ls  /tmp/pwn/college
 /tmp/pwn/college
 hacker@commands~making-directories:/tmp/pwn$ /challenge/run
+```
 Success! Here is your flag:
 pwn.college{ctbcgfuW5A_Vvf9MKdAvaN9vbEm.dFzM4QDL3EzN0czW}
-hacker@commands~making-directories:/tmp/pwn$ 
+
 
 
 
 # finding files
-
-
+```
 hacker@commands~finding-files:~$ find /-name flag
 find: ‘/-name’: No such file or directory
 find: ‘flag’: No such file or directory
@@ -195,13 +213,15 @@ cat: /usr/local/lib/python3.8/dist-packages/pwnlib/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/local/share/radare2/5.9.5/flag
 cat: /usr/local/share/radare2/5.9.5/flag: Is a directory
 hacker@commands~finding-files:~$ cat /usr/lib/llvm-10/include/polly/flag
+```
 pwn.college{QbdJyYKy2QFTZkbQEtkCUyeEgRv.dJzM4QDL3EzN0czW}hacker@commands~finding-files:~$ 
 
 # linking files
+```
 hacker@commands~linking-files:~$  ln -s /flag /home/hacker/not-the-flag
 hacker@commands~linking-files:~$ /challenge/catflag
+```
 About to read out the /home/hacker/not-the-flag file!
 pwn.college{cMR_Q3Yn1UGuu-0koexYsnuhwGC.dlTM1UDL3EzN0czW}
-hacker@commands~linking-files:~$ 
 
 

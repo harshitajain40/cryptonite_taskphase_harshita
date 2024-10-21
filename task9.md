@@ -1,42 +1,50 @@
 # permissions~changing-file-ownership
-
+```
 hacker@permissions~changing-file-ownership:~$ chown hacker /flag
 hacker@permissions~changing-file-ownership:~$ cat /flag
+```
 pwn.college{wvDT8MOvyXNPVQ5BthV3JqAR9WG.dFTM2QDL3EzN0czW}
-hacker@permissions~changing-file-ownership:~$ 
+
 
 # permissions~groups-and-files
-
+```
 hacker@permissions~groups-and-files:~$ chgrp hacker /flag
 hacker@permissions~groups-and-files:~$ cat /flag
+```
 pwn.college{sNiB77yZ3j3wlKk8ecu6f1lV94o.dFzNyUDL3EzN0czW}
-hacker@permissions~groups-and-files:~$ 
+
 
 
 # permissions~fun-with-groups-names
-
+```
 hacker@permissions~fun-with-groups-names:~$ id
 uid=1000(hacker) gid=1000(grp9069) groups=1000(grp9069)
 hacker@permissions~fun-with-groups-names:~$ chgrp 1000(grp9069) /flag
 ssh-entrypoint: syntax error near unexpected token `('
 hacker@permissions~fun-with-groups-names:~$ chgrp grp9069 /flag
 hacker@permissions~fun-with-groups-names:~$ cat /flag
+```
 pwn.college{EdXcBwV5C_rOke_NDmtYGXhCKTT.dJzNyUDL3EzN0czW}
-hacker@permissions~fun-with-groups-names:~$ 
+
 
 
 # ermissions~changing-permissions
+```
 hacker@permissions~changing-permissions:~$ chmod go+wrx /flag
 hacker@permissions~changing-permissions:~$ /flag
+```
 /flag: line 1: pwn.college{QpTmSba6ZD_LlWDGzo0Uh3DouNa.dNzNyUDL3EzN0czW}: command not found
 
 # permission executable files 
+```
 hacker@permissions~executable-files:~$ chmod a+x /challenge/run
 hacker@permissions~executable-files:~$ /challenge/run
+```
 Successful execution! Here is your flag:
 pwn.college{knYEqd7RjCYPAdI6Kt8jCR2C8TR.dJTM2QDL3EzN0czW}
 
 # permission-tweaking-practice
+```
 hacker@permissions~permission-tweaking-practice:~$ /challenge/run
 Round 0 (of 8)!
 
@@ -254,12 +262,12 @@ Current permissions of "/flag": ---------
 - the world doesn't have execute permissions
 hacker@permissions~permission-tweaking-practice:~$ chmod a+r /flag
 hacker@permissions~permission-tweaking-practice:~$ cat /flag
+```
 pwn.college{EwZEbs3o5zBOMO4jw5NGwKFqAs5.dBTM2QDL3EzN0czW}
-hacker@permissions~permission-tweaking-practice:~$
-Connected!                                                                        
+                                                                       
 
 # permissions-setting-practice
-
+```
 hacker@permissions~permissions-setting-practice:~$ /challenge/run
 Round 0 (of 8)!
 
@@ -479,17 +487,19 @@ hacker@permissions~permissions-setting-practice:~$ cat /flag
 cat: /flag: Permission denied
 hacker@permissions~permissions-setting-practice:~$ chmod a=rwx /flag
 hacker@permissions~permissions-setting-practice:~$ cat /flag
+```
 pwn.college{UGbQVcck45XQ0iVEih3rPKKV3zo.dNTM5QDL3EzN0czW}
-hacker@permissions~permissions-setting-practice:~$
 
 
 # the-suid-bit
+```
 hacker@permissions~the-suid-bit:~$ chmod u+s /challenge/getroot
 hacker@permissions~the-suid-bit:~$ /challenge/getroot
 SUCCESS! You have set the suid bit on this program, and it is running as root! 
 Here is your shell...
 root@permissions~the-suid-bit:~# cat /flag
+```
 pwn.college{gDsSjoMYEpqIe7noBr_57Hx_Ukh.dNTM2QDL3EzN0czW}
-root@permissions~the-suid-bit:~# 
+
 
 

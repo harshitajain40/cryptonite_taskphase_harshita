@@ -1,5 +1,5 @@
 # learning from documentaries 
-
+```
 hacker@man~learning-from-documentation:~$ --giveflag
 ssh-entrypoint: --giveflag: command not found
 hacker@man~learning-from-documentation:~$ /challenge/challenge
@@ -8,22 +8,24 @@ description for details).
 hacker@man~learning-from-documentation:~$ --giveflag /challenge/challenge
 ssh-entrypoint: --giveflag: command not found
 hacker@man~learning-from-documentation:~$ /challenge/challenge --giveflag
+```
 Correct argument! Here is your flag:
 pwn.college{s9kOv6-8mEllFwJ6hk0PH9vHjuO.dRjM5QDL3EzN0czW}
-hacker@man~learning-from-documentation:~$ 
 
 
-# learning complex usauage 
+# learning complex usauage
+```
 hacker@man~learning-complex-usage:~$ /challenge/challenge --printfile /flag
+```
 Correct argument! Here is the /flag file:
 pwn.college{Qncf86gLrxK7NnchTKy9mXoXlYT.dVjM5QDL3EzN0czW}
-hacker@man~learning-complex-usage:~$ 
+
 
 
 
 # reading manuals 
 
-
+```
 hacker@man~reading-manuals:~$ man challenge
 
 CHALLENGE(1)                         Challenge Commands                         CHALLENGE(1)
@@ -57,8 +59,9 @@ SEE ALSO
 
 pwn.college                               May 2024                              CHALLENGE(1)
 hacker@man~reading-manuals:~$ /challenge/challenge --soipxw 046
+```
 Correct usage! Your flag: pwn.college{Is0XoK468Nip8Qxw7pgkfSbjhrh.dRTM4QDL3EzN0czW}
-hacker@man~reading-manuals:~$ 
+
 
 
 
@@ -66,22 +69,20 @@ hacker@man~reading-manuals:~$
 
 
 # searching manual 
-
-
-
+```
 hacker@man~searching-manuals:~$ man challenge
 hacker@man~searching-manuals:~$ 
 hacker@man~searching-manuals:~$ man challenge 
 hacker@man~searching-manuals:~$ /challenge/challenge --shz
+```
 Initializing...
 Correct usage! Your flag: pwn.college{sFJ_JzLfk34sFQzYtYh5TEj_RVI.dVTM4QDL3EzN0czW}
-hacker@man~searching-manuals:~$
 
 
 
 
 #searching for manuals
-
+```
 hacker@man~searching-for-manuals:~$ man man 
 MAN(1)                               Manual pager utils                               MAN(1)
 
@@ -189,9 +190,10 @@ OVERVIEW
        man.  It is possible to set the "catch-all" variable $MANOPT to any string in command
        line format, with the exception that any spaces used as part of an option's  argument
        must  be  escaped (preceded by a backslash).  man will parse $MANOPT prior to parsing
-
+```
 
 # searching-for-manuals
+```
 hacker@man~searching-for-manuals:~$ man -k /challenge/challenge 
 cnlgxuozld (1)       - print the flag!
 hacker@man~searching-for-manuals:~$ /challenge/challenge --cnlgxuozld
@@ -234,14 +236,15 @@ SEE ALSO
 
 pwn.college                               May 2024                              CHALLENGE(1)
 hacker@man~searching-for-manuals:~$ /challenge/challenge --cnlgxu 463
+```
 Correct usage! Your flag: pwn.college{c463VnlF_EgAxuNCozlTdwosnPe.dZTM4QDL3EzN0czW}
-hacker@man~searching-for-manuals:~$ 
 
 
 
 
 
 # helpful program 
+```
 hacker@man~helpful-programs:~$ /challenge/challenge -h
 usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
 
@@ -259,10 +262,12 @@ ssh-entrypoint: --give-the-flag: command not found
 hacker@man~helpful-programs:~$ /challenge/challenge -p
 The secret value is: 46
 hacker@man~helpful-programs:~$ /challenge/challenge -g 46
+```
 Correct usage! Your flag: pwn.college{0Kx4XEa_6Qb9bDYo-cvKWIqiS4H.ddjM4QDL3EzN0czW}
-hacker@man~helpful-programs:~$ 
+
 
 # help-for-builtins
+```
 hacker@man~help-for-builtins:~$ help challenge
 challenge: challenge [--fortune] [--version] [--secret SECRET]
 challenge: challenge [--fortune] [--version] [--secret SECRET]
@@ -277,6 +282,7 @@ challenge: challenge [--fortune] [--version] [--secret SECRET]
     is "UaqvbsLx".
 ssh-entrypoint: challenge:: command not found
 hacker@man~help-for-builtins:~$ challenge --secret UaqvbsLx
+```
 Correct! Here is your flag!
 pwn.college{UaqvbsLxVgC2qqwcTpMb0YnwuFf.dRTM5QDL3EzN0czW}
 

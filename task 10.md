@@ -1,20 +1,24 @@
 # root-with-su
+```
 hacker@users~becoming-root-with-su:~$ su
 Password: 
 root@users~becoming-root-with-su:/home/hacker# cat /flag
+```
 pwn.college{A35k62Uh-1nwMcvs8nyo3cqlXeE.dVTN0UDL3EzN0czW}
-root@users~becoming-root-with-su:/home/hacker# 
+
 
 # other-users-with-su
+```
 hacker@users~other-users-with-su:~$ su zardus
 Password: 
 zardus@users~other-users-with-su:/home/hacker$ /challenge/run
+```
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{kFl2sRCmTewZkcgR_ZKeOID7SG9.dZTN0UDL3EzN0czW}
-zardus@users~other-users-with-su:/home/hacker$ 
 
 
 # cracking-passwords
+```
 hacker@users~cracking-passwords:~$ john /challenge/shadow-leak
 Created directory: /home/hacker/.john
 Loaded 1 password hash (crypt, generic crypt(3) [?/64])
@@ -33,14 +37,16 @@ Session completed
 hacker@users~cracking-passwords:~$ su zardus
 Password: 
 zardus@users~cracking-passwords:/home/hacker$ /challenge/run
+```
 Congratulations, you have become Zardus! Here is your flag:
 pwn.college{M9l91JttQfQ2g-3n79jZlTgJzGq.ddTN0UDL3EzN0czW}
-zardus@users~cracking-passwords:/home/hacker$ 
 
 # using sudo 
+```
 hacker@users~using-sudo:~$ sudo cat /flag
+```
 pwn.college{EJL1n2bZ1KbyO2MtUnni6kyQK4v.dhTN0UDL3EzN0czW}
-hacker@users~using-sudo:~$ 
+
 
 
 

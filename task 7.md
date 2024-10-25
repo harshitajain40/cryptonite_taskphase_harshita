@@ -62,6 +62,17 @@ _=/run/workspace/bin/env
 hacker@variables~printing-exported-variables:~$
 ```
 \
+
+# COMMAND OUTPUT 
+```
+hacker@variables~storing-command-output:~$ PWN=$(/challenge/run)
+Congratulations! You have read the flag into the PWN variable. Now print it out 
+and submit it!
+hacker@variables~storing-command-output:~$ echo $PWN
+```
+pwn.college{gZTudACS_sXVKTVKql_e3mM__Kf.dVzN0UDL3EzN0czW}
+hacker@variables~storing-command-output:~$ 
+ 
  # reading variables 
  ```
 hacker@variables~reading-files:~$  read PWN < /challenge/read_me
